@@ -1,0 +1,18 @@
+<%= render '/shared/page_title', title: @recipe.name.capitalize %>
+<div class="well col-md-8 col-md-offset-2">
+  <h4 class="description"><strong>Description: </strong></h4>
+  <hr />
+  <%= simple_format(@recipe.description) %>
+  <hr />
+  <div>
+    <p>
+      Created by: 
+      <strong><%= @recipe.user.name %></strong>
+    </p>
+    <p>
+      <div class="pull-right">
+        <%= time_ago_in_words(@recipe.created_at) %> ago
+      </div>
+    </p>
+  </div>
+</div>
