@@ -23,3 +23,11 @@
 .footer{
   text-align: center;
 }
+
+.custom-navbar-right{
+  li{
+    span, a{
+      color: #fff !important;
+    }
+  }
+}
